@@ -1,0 +1,1 @@
+export { default } from 'ember-favourite-heart/components/ember-favourite-heart';
