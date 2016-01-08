@@ -1,7 +1,7 @@
 {
   "name": "ember-favourite-heart",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Ember cli component for twitter like favourite heart button",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/anilmaurya/ember-favourite-heart",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "anilmaurya",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
