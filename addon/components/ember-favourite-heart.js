@@ -6,21 +6,21 @@ export default Ember.Component.extend({
   liked: false,
   likeCount: 0,
 
-  heartClass: function(){
+  heartClass: Ember.computed('liked', function() { 
     if(this.get('liked')){
       return "heart heartAnimation";
     }else{
       return "heart";
     }
-  }.property('liked'),
+  }),
 
-  heartStyle: function(){
+  heartStyle: Ember.computed('liked', function() {
     if(this.get('liked')){
       return "";
     }else{
       return "background-position: 0% 50%;";
     }
-  }.property('liked'),
+  }),
 
   like: function(){
     this.set('liked', true);
