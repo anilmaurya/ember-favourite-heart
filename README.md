@@ -1,6 +1,7 @@
 # ember-favourite-heart ❤️
 
 This is Ember cli addon which provide twitter like favourite heart component.
+- <a href="http://anilmaurya.github.io/ember-favourite-heart/" target="_blank"> Demo </a>
 
 ## Installation
 
