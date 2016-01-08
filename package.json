@@ -1,6 +1,6 @@
 {
   "name": "ember-favourite-heart",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Ember cli component for twitter like favourite heart button",
   "directories": {
     "doc": "doc",
