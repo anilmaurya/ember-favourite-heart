@@ -1,4 +1,8 @@
-<div class={{heartClass}} {{action "toggleFav"}} style={{heartStyle}}></div>
-<div class="heartCount">
-  {{likeCount}}
-</div>
+{{#if hasBlock}}
+  {{yield}}
+{{else}}
+  <div class={{heartClass}} {{action "toggleFav"}} style={{heartStyle}}></div>
+  <div class="heartCount">
+    {{likeCount}}
+  </div>
+{{/if}}
