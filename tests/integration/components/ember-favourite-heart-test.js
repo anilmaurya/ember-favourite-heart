@@ -11,9 +11,9 @@ test('it renders', function(assert) {
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
 
-  this.render(hbs`{{ember-favourite-heart}}`);
+  this.render(hbs`{{ember-favourite-heart likeCount=20}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.equal(this.$().text().trim(), '20');
 
   // Template block usage:
   this.render(hbs`
