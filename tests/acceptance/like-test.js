@@ -16,9 +16,20 @@ test('add heartAnimation class on like event', function(assert) {
   visit('/');
 
   andThen(function() {
-    click('.heart');
+    click('.heart:first');
     andThen(function(){
       assert.equal(find('.heart.heartAnimation').length, 1);
+    });
+  });
+});
+
+test('do not add heartAnimation class on like event for disabled', function(assert) {
+  visit('/');
+
+  andThen(function() {
+    click('.heart:last');
+    andThen(function(){
+      assert.equal(find('.heart.heartAnimation').length, 0);
     });
   });
 });
@@ -27,7 +38,7 @@ test('remove heartAnimation class on unlike event', function(assert) {
   visit('/');
 
   andThen(function() {
-    click('.heart');
+    click('.heart:first');
     andThen(function(){
       assert.equal(find('.heart.heartAnimation').length, 1);
       click('.heart.heartAnimation');
@@ -42,9 +53,9 @@ test('increase like count on like event', function(assert) {
   visit('/');
 
   andThen(function() {
-    click('.heart');
+    click('.heart:first');
     andThen(function(){
-      assert.equal(find('.heartCount').text().trim(), "201");
+      assert.equal(find('.heartCount:first').text().trim(), "201");
     });
   });
 });
@@ -53,12 +64,12 @@ test('decrease like count on unlike event', function(assert) {
   visit('/');
 
   andThen(function() {
-    click('.heart');
+    click('.heart:first');
     andThen(function(){
-      assert.equal(find('.heartCount').text().trim(), "201");
+      assert.equal(find('.heartCount:first').text().trim(), "201");
       click('.heart.heartAnimation');
       andThen(function(){
-        assert.equal(find('.heartCount').text().trim(), "200");
+        assert.equal(find('.heartCount:first').text().trim(), "200");
       });
     });
   });

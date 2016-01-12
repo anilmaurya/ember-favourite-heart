@@ -30,6 +30,10 @@ This is Ember cli addon which provide twitter like favourite heart component.
     <td valign="top"><code>likeCount</code></td>
     <td valign="top">No. of likes</td>
   </tr>
+  <tr>
+    <td valign="top"><code>disabled</code></td>
+    <td valign="top">Disable like/unlike (default: false)</td>
+  </tr>
 </table>
 
 ### Actions
