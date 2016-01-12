@@ -10,3 +10,16 @@
 <p><b>Output:</b></p>
 
 {{ember-favourite-heart liked=false likeCount=200 }}
+
+<hr>
+
+<p><b>Code</b></p>
+{{#code-block language='handlebars'}}\{{ember-favourite-heart
+  liked=false likeCount=200 action="toggleLike" disabled=true
+}}{{/code-block}}
+{{outlet}}
+<br>
+
+<p><b>Output:</b></p>
+
+{{ember-favourite-heart liked=false likeCount=200 disabled=true}}

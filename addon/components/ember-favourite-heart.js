@@ -5,6 +5,7 @@ export default Ember.Component.extend({
   layout: layout,
   liked: false,
   likeCount: 0,
+  disabled: false,
 
   heartClass: Ember.computed('liked', function() { 
     if(this.get('liked')){
@@ -34,12 +35,14 @@ export default Ember.Component.extend({
 
   actions: {
     toggleFav: function(){
-      if(this.get('liked')){
-        this.unlike();
-      }else{
-        this.like();
+      if(!this.get('disabled')){
+        if(this.get('liked')){
+          this.unlike();
+        }else{
+          this.like();
+        }
+        this.sendAction();
       }
-      this.sendAction();
     }
   }
 });
