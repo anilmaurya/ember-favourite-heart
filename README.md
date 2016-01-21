@@ -1,4 +1,4 @@
-# ember-favourite-heart ❤️[![Build Status](https://travis-ci.org/anilmaurya/ember-favourite-heart.svg?branch=master)](https://travis-ci.org/anilmaurya/ember-favourite-heart) [![npm version](https://badge.fury.io/js/ember-favourite-heart.svg)](https://badge.fury.io/js/ember-favourite-heart)
+# ember-favourite-heart ❤️[![Build Status](https://travis-ci.org/anilmaurya/ember-favourite-heart.svg?branch=master)](https://travis-ci.org/anilmaurya/ember-favourite-heart) [![npm version](https://badge.fury.io/js/ember-favourite-heart.svg)](https://badge.fury.io/js/ember-favourite-heart) [![Codacy Badge](https://api.codacy.com/project/badge/grade/3a2cc5e08fcc4978a4107557737a1754)](https://www.codacy.com/app/anil_2/ember-favourite-heart)
 
 This is Ember cli addon which provide twitter like favourite heart component.
 - <a href="http://anilmaurya.github.io/ember-favourite-heart/" target="_blank"> Demo </a>
