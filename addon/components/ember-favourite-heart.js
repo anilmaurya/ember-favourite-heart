@@ -7,7 +7,7 @@ export default Ember.Component.extend({
   likeCount: 0,
   disabled: false,
 
-  heartClass: Ember.computed('liked', function() { 
+  heartClass: Ember.computed('liked', function() {
     if(this.get('liked')){
       return "heart heartAnimation";
     }else{
@@ -41,7 +41,11 @@ export default Ember.Component.extend({
         }else{
           this.like();
         }
-        this.sendAction();
+        if (this.get('likeItem')) {
+          this.sendAction('action', this.get('likeItem'));
+        } else {
+          this.sendAction();
+        }
       }
     }
   }
