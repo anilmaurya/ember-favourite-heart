@@ -11,7 +11,7 @@ This is Ember cli addon which provide twitter like favourite heart component.
  This addon provides an `ember-inplace-edit` component.
 
 ```handlebars
-{{ember-favourite-heart liked=model.liked likeCount=model.likes_count action="toggleLike"}}
+{{ember-favourite-heart liked=model.liked likeCount=model.likes_count likeItem=model action="toggleLike"}}
   
 ```
 
@@ -46,6 +46,10 @@ This is Ember cli addon which provide twitter like favourite heart component.
   <tr>
     <td valign="top"><code>action</code></td>
     <td valign="top">Action to be called after clicking on heart</tr>
+  </tr>
+  <tr>
+    <td valign="top"><code>likeItem</code></td>
+    <td valign="top">Optional parameter passed with action</tr>
   </tr>
 </table>
 
